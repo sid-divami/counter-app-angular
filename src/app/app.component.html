@@ -1,0 +1,14 @@
+<div
+  class="container d-flex flex-column align-items-center justify-content-center"
+>
+  <div class="row text-center mb-3">
+    <h1 class="">Counter App</h1>
+  </div>
+  <div class="row">
+    <h1>{{ counter }}</h1>
+  </div>
+  <app-child
+    [inputFromParent]="counter"
+    (sendCount)="getCount($event)"
+  ></app-child>
+</div>
